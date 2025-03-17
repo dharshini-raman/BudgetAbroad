@@ -17,12 +17,12 @@ export default function ChatHeader({
   clearMessages: () => void;
 }) {
   return (
-    <div className="z-10 flex justify-center items-center fixed top-0 w-full p-5 bg-white shadow-[0_10px_15px_-3px_rgba(255,255,255,1)]">
+    <div className="z-10 flex justify-center items-center fixed top-0 w-full p-5 bg-gray-100 shadow-md">
       <div className="flex w-full">
         <div className="flex-0 w-[100px]"></div>
         <div className="flex-1 flex justify-center items-center gap-2">
           <AILogo />
-          <p>{CHAT_HEADER}</p>
+          <p className="text-black font-semibold">{CHAT_HEADER}</p>
         </div>
         <div className="flex-0 w-[100px] flex justify-end items-center">
           <Button
