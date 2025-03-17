@@ -44,17 +44,18 @@ export default function ChatInput({
                 name="message"
                 render={({ field }) => (
                   <FormItem className="flex-grow">
-                    <FormControl>
-                      <Input
-                        {...field}
-                        onChange={handleInputChange}
-                        value={input}
-                        className="border-none focus-visible:ring-0 focus-visible:ring-offset-0 bg-transparent"
-                        onFocus={() => setIsFocused(true)}
-                        onBlur={() => setIsFocused(false)}
-                        placeholder="Type your message here..."
-                      />
-                    </FormControl>
+<FormControl>
+  <Input
+    {...field}
+    onChange={handleInputChange}
+    value={input}
+    className="border-none focus-visible:ring-0 focus-visible:ring-offset-0 bg-white text-black placeholder-gray-500 px-4 py-2 rounded-full"
+    onFocus={() => setIsFocused(true)}
+    onBlur={() => setIsFocused(false)}
+    placeholder="Type your message here..."
+  />
+</FormControl>
+
                   </FormItem>
                 )}
               />
